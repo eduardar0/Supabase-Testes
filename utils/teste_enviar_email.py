@@ -24,7 +24,7 @@ mensagem['Subject'] = f"Alerta da Série "#{serie['codigo_serie']}"
 mensagem['From'] = 'govinsightstests@gmail.com'  # Remetente (precisa estar validado na Brevo)
 mensagem['To'] = ""#serie["email_usuario"] email do destinatário
 
-# Corpo da mensagem (pode ser HTML ou plain text)
+# Corpo da mensagem (pode ser HTML ou plain text), estilização aqui
 corpo = MIMEText(texto, 'html')
 mensagem.attach(corpo)
 
