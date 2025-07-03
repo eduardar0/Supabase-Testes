@@ -4,13 +4,13 @@ from email.mime.multipart import MIMEMultipart
 
 from data.connect import supabase as bd
 
-texto = "TEXTO TESTE"
-posicao = 1
-
-# Pegar série específica do Supabase
-seriesBD = bd.table("series").select("*").execute()
-seriesBD = seriesBD.data
-serie = seriesBD[posicao]
+texto = "TEXTO TESTE" #Botar um Lorem pra testes
+# posicao = 1
+#
+# # Pegar série específica do Supabase
+# seriesBD = bd.table("series").select("*").execute()
+# seriesBD = seriesBD.data
+# serie = seriesBD[posicao]
 
 # Configuração SMTP da Brevo
 smtp_server = "smtp-relay.brevo.com"
@@ -20,9 +20,9 @@ smtp_password = "h92HcFkdMgUwVySJ"        # Sua SMTP Key
 
 # Criar a mensagem
 mensagem = MIMEMultipart()
-mensagem['Subject'] = f"Alerta da Série {serie['codigo_serie']}"
+mensagem['Subject'] = f"Alerta da Série "#{serie['codigo_serie']}"
 mensagem['From'] = 'govinsightstests@gmail.com'  # Remetente (precisa estar validado na Brevo)
-mensagem['To'] = serie["email_usuario"]
+mensagem['To'] = ""#serie["email_usuario"] email do destinatário
 
 # Corpo da mensagem (pode ser HTML ou plain text)
 corpo = MIMEText(texto, 'html')

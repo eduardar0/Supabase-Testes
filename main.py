@@ -1,6 +1,4 @@
 import re
-from datetime import datetime
-
 import ipeadatapy as ipea
 import streamlit as st
 import pandas as pd
