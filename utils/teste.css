@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 40px 0;
+    line-height: 1.6;
+}
+
+.email-container {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #f3ffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.logo-container {
+    background-color: #e6e6e6;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.content {
+    padding: 30px;
+}
+
+.title {
+    font-size: 22px;
+    color: #1a365d;
+    font-weight: 600;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.alert {
+    background-color: #f0f7ff;
+    border-left: 4px solid #3182ce;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.variacao {
+    color: #e53e3e;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #3182ce;
+    color: white !important;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2c5282;
+}
+
+.footer {
+    font-size: 12px;
+    color: #718096;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 20px;
+}
+
+/* Melhorias para responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+    
+    .email-container {
+        border-radius: 8px;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+}
